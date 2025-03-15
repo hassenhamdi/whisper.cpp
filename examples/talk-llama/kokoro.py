@@ -43,11 +43,12 @@ args = parser.parse_args()
 
 if not args.quick:
     import importlib.util
-    if importlib.util.find_spec("elevenlabs") is None:
-        print("elevenlabs library is not installed, you can install it to your enviroment using 'pip install elevenlabs'")
+    if importlib.util.find_spec("kokoro") is None:
+        print("kokoro library is not installed, you can install it to your enviroment using 'pip install kokoro'")
         sys.exit()
 
-from elevenlabs import voices, generate, play, save
+from kokoro import Kpipeline
+
 
 if args.filter and "=" in args.filter[0]:
     voicelist = voices()
