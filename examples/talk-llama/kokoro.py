@@ -47,7 +47,7 @@ if not args.quick:
         print("kokoro library is not installed, you can install it to your enviroment using 'pip install kokoro'")
         sys.exit()
 
-from kokoro import Kpipeline
+from kokoro import KPipeline
 
 
 if args.filter and "=" in args.filter[0]:
