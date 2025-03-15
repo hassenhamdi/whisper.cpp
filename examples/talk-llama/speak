@@ -17,7 +17,7 @@ elif installed say; then
 
 # Eleven Labs
 elif installed python3 && \
-  python3 -c 'import importlib.util; exit(not importlib.util.find_spec("elevenlabs"))' && \
+  python3 -c 'import importlib.util; exit(not importlib.util.find_spec("kokoro"))' && \
   installed ffplay; then
     # It's possible to use the API for free with limited number of characters.
     # To increase this limit register to https://beta.elevenlabs.io to get an api key
